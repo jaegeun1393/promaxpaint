@@ -4,10 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 import Pagination from "../Components/Pagination";
+import Top from "../Components/GoTop";
 
 const Gallery = () => {
   return (
     <>
+      <Top />
+
       <div className="wrapper gallery-bg relative bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-bannerGradient -z-10"></div>
         <section className="contain flex-col gap-6 justify-center h-80 sm:h-96 items-center">
