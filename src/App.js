@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./Layout//Header";
@@ -13,16 +13,9 @@ const App = () => {
   const [activeSection, setActiveSection] = useState();
 
   const handleNavClick = (sectionId) => {
-    if (sectionId != 'nothing') {
     console.log('sectionId:', sectionId);
     setActiveSection(sectionId);
     console.log('activeSection:', activeSection);
-    } else {
-      setActiveSection('');
-    }
-  };
-
-  useLayoutEffect(() => {
     const section = document.querySelector(`#${activeSection}`);
     if (section) {
       window.scrollTo({
@@ -30,7 +23,7 @@ const App = () => {
         behavior: 'smooth'
       });
     }
-  }, [activeSection]);
+  };
 
   return (
     <>
