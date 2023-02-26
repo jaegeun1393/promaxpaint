@@ -45,3 +45,6 @@
 .blog-bg {
   background-image: url("../public/assets/blogbanner.png");
 }
+* {
+  scroll-behavior: smooth !important ;
+}

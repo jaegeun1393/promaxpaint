@@ -1,6 +1,10 @@
+import Top from "../Components/GoTop";
+
 const Contact = () => {
   return (
     <div>
+      <Top />
+
       <div className="wrapper contact-bg relative bg-cover bg-no-repeat bg-center">
         <div className="absolute inset-0 bg-bannerGradient -z-10"></div>
         <section className="contain flex-col gap-3 sm:gap-6 justify-center h-80 sm:h-96 items-center">
