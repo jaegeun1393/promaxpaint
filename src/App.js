@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from "react-router-dom";
+import ChatwootWidget from "./chatwoot_widget";
 
 import Header from "./Layout//Header";
 import Footer from "./Layout/Footer";
@@ -13,9 +14,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState();
 
   const handleNavClick = (sectionId) => {
-    console.log('sectionId:', sectionId);
     setActiveSection(sectionId);
-    console.log('activeSection:', activeSection);
     const section = document.querySelector(`#${activeSection}`);
     if (section) {
       window.scrollTo({
@@ -35,6 +34,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
+      <ChatwootWidget />
     </>
   );
 };

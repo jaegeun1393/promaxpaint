@@ -29,146 +29,33 @@ const Contact = () => {
           <div className="bg-formBg w-full lg:w-1/2 flex-1 flex flex-col gap-12 items-center p-8 md:p-12 rounded-lg">
             <div className="flex-1 w-full flex flex-col gap-8">
               <div className="flex flex-col gap-3 sm:gap-4">
-                <h2 className="input-label">First Name</h2>
-                <input
-                  type="text"
-                  placeholder="Enter First Name"
-                  className="input"
-                />
-              </div>
-
-              <div className="flex flex-col gap-3 sm:gap-4">
-                <h2 className="input-label">Last Name</h2>
-                <input
-                  type="text"
-                  placeholder="Enter Last Name"
-                  className="input"
-                />
+                <h2 className="input-label">Email</h2>
+                <p>sean@promaxpdx.com</p>
               </div>
 
               <div className="flex flex-col gap-3 sm:gap-4">
                 <h2 className="input-label">Phone Number</h2>
-                <input
-                  type="text"
-                  placeholder="Enter Phone Name"
-                  className="input"
-                />
+                <p>971-9712-9755</p>
               </div>
 
               <div className="flex flex-col gap-3 sm:gap-4">
-                <h2 className="input-label">Project Interested In</h2>
-                <div className="grid grid-cols-fluid auto-rows-fr gap-3">
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Interior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Interior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Interior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Exterior Painting
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Other
-                    </span>
-                  </div>
-                  <div className="flex gap-2 items-center">
-                    <input type="checkbox" />
-                    <span className="text-[#262424] font-sm font-light">
-                      Other
-                    </span>
-                  </div>
-                </div>
+                <h2 className="input-label">Address</h2>
+                <p>Happy valley</p>
               </div>
 
               <div className="flex flex-col gap-3 sm:gap-4">
-                <h2 className="input-label">Question or Comment</h2>
-                <textarea
-                  type="text"
-                  placeholder="Add Question or comments"
-                  className="input resize-none h-24"
-                ></textarea>
+                <h2 className="input-label">Submit the google Form</h2>
+                <button className="bg-darkGreen text-white font-medium py-4 px-10 rounded-lg"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open('https://forms.gle/4pcoNPxaAD2eHkyY6', '_blank');
+                  }}
+                >
+                  Google Form
+                </button>
               </div>
             </div>
-            <button className="bg-darkGreen text-white font-medium py-4 px-10 rounded-lg">
-              Submit
-            </button>
+
           </div>
         </section>
       </div>
