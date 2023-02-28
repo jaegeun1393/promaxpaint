@@ -78,7 +78,7 @@ const Header = ({ onNavClick }) => {
             Reviews
           </a>
           <NavLink
-            to="/blog"
+            to="/blog/article/1"
             className={({ isActive }) =>
               isActive ? "text-darkGreen font-semibold" : "text-lightGray"
             }
